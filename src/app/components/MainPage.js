@@ -11,7 +11,6 @@ import color from "../config/colors";
  * @return {HTML}
  */
 export default function MainPage() {
-
   const [showHCAirTemperature, setShowHCAirTemperature] = useState(true);
   const [showSolarRadiation, setShowSolarRadiation] = useState(true);
   const [showDewPoint, setShowDewPoint] = useState(true);
@@ -29,7 +28,7 @@ export default function MainPage() {
     {
       name: "Dew Point",
       id: "dewPoint",
-      type: "line",
+      type: "spline",
       color: color.dewPoint,
       data: data.dewPointData,
       visible: showDewPoint,
@@ -86,60 +85,19 @@ export default function MainPage() {
     setOptions({
       series: [
         {
-          name: "Solar Radiation",
-          id: "solarRadiation",
-          type: "area",
-          color: color.solarRadiation,
-          data: data.solarRadiationData,
           visible: showSolarRadiation,
         },
         {
-          name: "Dew Point",
-          id: "dewPoint",
-          type: "line",
-          color: color.dewPoint,
-          data: data.dewPointData,
           visible: showDewPoint,
-          marker: {
-            symbol: "square",
-          },
         },
         {
-          name: "VPD",
-          id: "vpd",
-          type: "line",
-          color: color.vpd,
-          data: data.vpdData,
           visible: showVpd,
-          marker: {
-            symbol: "triangle",
-          },
         },
         {
-          name: "HC Air Temperature",
-          id: "hcAirTemperature",
-          type: "spline",
-          color: color.hcAirTemperature,
-          data: data.averages,
           visible: showHCAirTemperature,
-          marker: {
-            symbol: "circle",
-          },
         },
         {
-          name: "range",
-          id: "range",
-          type: "arearange",
-          data: data.ranges,
-          lineWidth: 0,
-          linkedTo: ":hcAirTemperature",
-          color: color.hcAirTemperature,
-          fillOpacity: 0.3,
-          zIndex: 0,
           visible: showHCAirTemperature,
-          marker: {
-            enabled: false,
-          },
         },
       ],
     });
