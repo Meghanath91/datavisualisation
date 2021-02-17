@@ -42,5 +42,5 @@ export default Object.freeze({
       x: 0,
       y: 0,
     },
-  }
-})
+  },
+});
