@@ -2,6 +2,9 @@ ul {
   list-style-type: none;
   margin: 0;
 }
+.legend-container p {
+  color: #2196f3;
+}
 .chart-container {
   width: 100%;
 }
@@ -26,7 +29,9 @@ ul {
   list-style: none;
   width: 100%;
 }
-
+.legend-list-container {
+  width: 25%;
+}
 .legend-symbol-container {
   display: flex;
 }
