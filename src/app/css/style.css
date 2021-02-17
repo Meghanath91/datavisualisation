@@ -1,0 +1,60 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+.chart-container {
+  width: 100%;
+}
+.dewPoint {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: rgb(166, 206, 227);
+}
+.hcAirTemperature {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: rgb(227, 26, 28);
+}
+
+.legend-container {
+  list-style: none;
+  width: 100%;
+}
+
+.legend-symbol-container {
+  display: flex;
+}
+.legend-symbol-off-container {
+  display: flex;
+  opacity: 0.5;
+}
+.legend-symbol-off-container,
+.hcAirTemperature {
+  opacity: 0.5;
+}
+
+.main-container {
+  display: flex;
+}
+.solarRadiation {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: rgb(255, 255, 153);
+}
+.vpd {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: rgb(51, 160, 44);
+}
