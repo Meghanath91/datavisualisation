@@ -4,7 +4,7 @@ export default Object.freeze({
       zoomType: "x",
     },
     title: {
-      text: "Field Climate Sample Graph",
+      text: "Sample Graph",
     },
     xAxis: {
       type: "datetime",

@@ -18,7 +18,7 @@ export default function LegendList({
 }) {
   return (
     <div className="legend-container">
-      <p>Field of Excellence Weather Station</p>
+      <p>Legends</p>
       <ul>
         <LegendItem
           legend="HC Air Temperature"
