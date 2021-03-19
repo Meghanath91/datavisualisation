@@ -63,3 +63,9 @@ ul {
   border-radius: 5px;
   background: rgb(51, 160, 44);
 }
+@media only screen and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
